@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 
@@ -26,9 +27,9 @@ class MainActivity : AppCompatActivity() {
 //            startActivity(intent)
 //            finish()
 //        }
-        val sign = findViewById<Button>(R.id.register)
+        val sign = findViewById<TextView>(R.id.register)
         sign.setOnClickListener{
-            val intent = Intent(this,RegisterActivity::class.java)
+            val intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)
         }
 
@@ -51,7 +52,7 @@ class MainActivity : AppCompatActivity() {
 //                            editor.putBoolean("isLoggedIn", true)
 //                            editor.apply()
 
-                            val intent = Intent(this, DashboardActivity::class.java)
+                            val intent = Intent(this, BottomnavigationActivity::class.java)
                             startActivity(intent)
                             finish()
                         } else{
