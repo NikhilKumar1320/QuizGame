@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">QuizGame</string>
+    <string name="quiz">Quiz</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="login">Login</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="register">Register</string>
+</resources>
