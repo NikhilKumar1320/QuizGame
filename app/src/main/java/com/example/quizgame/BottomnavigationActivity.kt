@@ -19,8 +19,8 @@ class BottomnavigationActivity : AppCompatActivity() {
         val navView: BottomNavigationView = findViewById(R.id.bottom_navigation)
 
         supportFragmentManager.beginTransaction().apply {
-            add(R.id.fragment_container, dashboardFragment, "DashBoard").hide(dashboardFragment)
-            add(R.id.fragment_container, quizFragment, "Quiz")
+            add(R.id.fragment_container, dashboardFragment, "DashBoard")
+            add(R.id.fragment_container, quizFragment, "Quiz").hide(quizFragment)
         }.commit()
 
         activeFragment = dashboardFragment
