@@ -34,13 +34,14 @@
                     tools:layout_editor_absoluteX="286dp"
                     tools:layout_editor_absoluteY="16dp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"/>
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:contentDescription="@string/symbol"/>
 
                 <TextView
                     android:id="@+id/hi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Hello"
+                    android:text="@string/hello"
                     android:layout_marginStart="24dp"
                     android:textColor="@color/dark_blue"
                     android:textSize="16sp"
@@ -69,7 +70,8 @@
                     app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="@+id/logo"
                     tools:layout_editor_absoluteY="0dp"
-                    tools:ignore="MissingConstraints" />
+                    tools:ignore="MissingConstraints"
+                    android:contentDescription="@string/logo"/>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -86,7 +88,8 @@
                 android:inputType="textPersonName"
                 android:hint="@string/search"
                 android:drawableStart="@drawable/search"
-                android:drawablePadding="8dp"/>
+                android:drawablePadding="8dp"
+                android:autofillHints="search" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -101,7 +104,8 @@
                     android:layout_marginEnd="12dp"
                     android:layout_marginTop="5dp"
                     android:orientation="vertical"
-                    android:background="@drawable/white_background">
+                    android:background="@drawable/white_background"
+                    tools:ignore="UselessParent">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
@@ -126,7 +130,8 @@
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent" />
+                                app:layout_constraintTop_toTopOf="parent"
+                                android:contentDescription="@string/symbol"/>
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -134,7 +139,7 @@
                             android:id="@+id/name1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="5"
+                            android:text="@string/_5"
                             android:layout_marginStart="16dp"
                             android:textStyle="bold"
                             android:textSize="22sp"
@@ -177,7 +182,8 @@
                     android:layout_marginEnd="12dp"
                     android:layout_marginTop="5dp"
                     android:orientation="vertical"
-                    android:background="@drawable/white_background">
+                    android:background="@drawable/white_background"
+                    tools:ignore="UselessParent">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
@@ -202,7 +208,8 @@
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent" />
+                                app:layout_constraintTop_toTopOf="parent"
+                                android:contentDescription="@string/symbol"/>
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -210,7 +217,7 @@
                             android:id="@+id/name3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="15"
+                            android:text="@string/_15"
                             android:layout_marginStart="16dp"
                             android:textStyle="bold"
                             android:textSize="22sp"
@@ -222,7 +229,7 @@
                             android:id="@+id/name4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Computer Quiz"
+                            android:text="@string/computer_quiz"
                             android:textStyle="bold"
                             android:textSize="16sp"
                             android:textColor="#797D81"
@@ -253,7 +260,8 @@
                     android:layout_marginEnd="12dp"
                     android:layout_marginTop="5dp"
                     android:orientation="vertical"
-                    android:background="@drawable/white_background">
+                    android:background="@drawable/white_background"
+                    tools:ignore="UselessParent">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
@@ -278,7 +286,8 @@
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent" />
+                                app:layout_constraintTop_toTopOf="parent"
+                                android:contentDescription="@string/symbol"/>
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -286,7 +295,7 @@
                             android:id="@+id/name5"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="10"
+                            android:text="@string/_10"
                             android:layout_marginStart="16dp"
                             android:textStyle="bold"
                             android:textSize="22sp"
@@ -298,7 +307,7 @@
                             android:id="@+id/name6"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Science Quiz"
+                            android:text="@string/science_quiz"
                             android:textStyle="bold"
                             android:textSize="16sp"
                             android:textColor="#797D81"
@@ -329,7 +338,8 @@
                     android:layout_marginEnd="12dp"
                     android:layout_marginTop="5dp"
                     android:orientation="vertical"
-                    android:background="@drawable/white_background">
+                    android:background="@drawable/white_background"
+                    tools:ignore="UselessParent">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
@@ -354,7 +364,8 @@
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent" />
+                                app:layout_constraintTop_toTopOf="parent"
+                                android:contentDescription="@string/symbol" />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -362,7 +373,7 @@
                             android:id="@+id/name7"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="5"
+                            android:text="@string/_5"
                             android:layout_marginStart="16dp"
                             android:textStyle="bold"
                             android:textSize="22sp"
@@ -374,7 +385,7 @@
                             android:id="@+id/name8"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Maths Quiz"
+                            android:text="@string/maths_quiz"
                             android:textStyle="bold"
                             android:textSize="16sp"
                             android:textColor="#797D81"
@@ -411,7 +422,8 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="12dp"
                     android:background="@drawable/white_background"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    tools:ignore="UselessParent">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
@@ -436,7 +448,8 @@
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent" />
+                                app:layout_constraintTop_toTopOf="parent"
+                                android:contentDescription="@string/symbol" />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -445,7 +458,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="16dp"
-                            android:text="2"
+                            android:text="@string/_2"
                             android:textColor="#1587FE"
                             android:textSize="22sp"
                             android:textStyle="bold"
@@ -456,7 +469,7 @@
                             android:id="@+id/sports2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Sports Quiz"
+                            android:text="@string/sports_quiz"
                             android:textColor="#797D81"
                             android:textSize="16sp"
                             android:textStyle="bold"

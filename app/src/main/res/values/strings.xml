@@ -17,4 +17,15 @@
     <string name="compititive_exam_quiz">Compititive Exam Quiz</string>
     <string name="sign_out">Sign Out</string>
     <string name="general_knowledge">General Knowledge</string>
+    <string name="_2">2</string>
+    <string name="sports_quiz">Sports Quiz</string>
+    <string name="symbol">Symbol</string>
+    <string name="_5">5</string>
+    <string name="maths_quiz">Maths Quiz</string>
+    <string name="_10">10</string>
+    <string name="science_quiz">Science Quiz</string>
+    <string name="_15">15</string>
+    <string name="computer_quiz">Computer Quiz</string>
+    <string name="logo">logo</string>
+    <string name="hello">Hello</string>
 </resources>
