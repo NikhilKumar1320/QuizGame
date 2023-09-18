@@ -20,13 +20,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         auth = FirebaseAuth.getInstance()
-        //sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE)
+        sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE)
 
-//        if (sharedPreferences.getBoolean("isLoggedIn", false)) {
-//            val intent = Intent(this, DashboardActivity::class.java)
-//            startActivity(intent)
-//            finish()
-//        }
+        if (sharedPreferences.getBoolean("isLoggedIn", false)) {
+            val intent = Intent(this, DashboardActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
         val sign = findViewById<TextView>(R.id.register)
         sign.setOnClickListener{
             val intent = Intent(this, RegisterActivity::class.java)
@@ -48,9 +48,9 @@ class MainActivity : AppCompatActivity() {
 
                             Toast.makeText(this, "Registration successful", Toast.LENGTH_SHORT).show()
 
-//                            val editor = sharedPreferences.edit()
-//                            editor.putBoolean("isLoggedIn", true)
-//                            editor.apply()
+                            val editor = sharedPreferences.edit()
+                            editor.putBoolean("isLoggedIn", true)
+                            editor.apply()
 
                             val intent = Intent(this, DashboardActivity::class.java)
                             startActivity(intent)
