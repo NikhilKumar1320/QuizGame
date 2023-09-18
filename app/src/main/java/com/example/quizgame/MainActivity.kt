@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
 //                            editor.putBoolean("isLoggedIn", true)
 //                            editor.apply()
 
-                            val intent = Intent(this, BottomnavigationActivity::class.java)
+                            val intent = Intent(this, DashboardActivity::class.java)
                             startActivity(intent)
                             finish()
                         } else{
