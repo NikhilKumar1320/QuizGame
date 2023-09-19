@@ -6,6 +6,8 @@ import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
+import android.widget.LinearLayout
+import android.widget.TextView
 import com.google.firebase.auth.FirebaseAuth
 
 class DashboardActivity : AppCompatActivity() {
@@ -31,6 +33,12 @@ class DashboardActivity : AppCompatActivity() {
             val intent = Intent(this,MainActivity::class.java)
             startActivity(intent)
             finish()
+        }
+
+        val gk1 = findViewById<LinearLayout>(R.id.gk)
+        gk1.setOnClickListener{
+            val intent = Intent(this, GKquizActivity::class.java)
+            startActivity(intent)
         }
     }
 }

@@ -8,6 +8,10 @@ android {
     namespace = "com.example.quizgame"
     compileSdk = 33
 
+    buildFeatures {
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId = "com.example.quizgame"
         minSdk = 24
