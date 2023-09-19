@@ -3,29 +3,30 @@ package com.example.quizgame
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
+import com.example.quizgame.databinding.ActivityComputerBinding
 import com.example.quizgame.databinding.ActivityGkquizBinding
 
-class GKquizActivity : AppCompatActivity() {
+class ComputerActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityGkquizBinding
+    private lateinit var binding: ActivityComputerBinding
     private lateinit var list: ArrayList<QuestionModel>
     private var count: Int = 0
     private var score = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityGkquizBinding.inflate(layoutInflater)
+        binding = ActivityComputerBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         // Initialize the list
         list = ArrayList<QuestionModel>()
 
-        list.add(QuestionModel("Which planet is known as the Red Planet?", "Venus","Mars", "Jupiter", "Saturn","Mars"))
-        list.add(QuestionModel("Who wrote the famous play Romeo and Juliet?", "Charles Dickens","William Shakespeare", "Jane Austen", "Mark Twain","William Shakespeare"))
-        list.add(QuestionModel("What is the largest mammal in the world?", "African Elephant","Blue Whale", "Giraffe", "Polar Bear","Blue Whale"))
-        list.add(QuestionModel("Which famous ancient wonder was located in the city of Alexandria in Egypt?", "The Hanging Gardens of Babylon","The Statue of Zeus at Olympia", "The Lighthouse of Alexandria", "The Temple of Artemis at Ephesus","The Lighthouse of Alexandria"))
-        list.add(QuestionModel("What is the chemical symbol for gold?", "Gd","Au", "Ag", "Go","Au"))
+        list.add(QuestionModel("What does CPU stand for?", "Central Processing Unit","Computer Programming Unit", " Central Program Utility", "Computer Power Unit","Central Processing Unit"))
+        list.add(QuestionModel("Which programming language is commonly used for web development?", "Java","Python", "HTML", "C++","HTML"))
+        list.add(QuestionModel("What is the purpose of an operating system?", "To play games","To manage hardware and software resources", "To create documents and spreadsheets", "To browse the internet","To manage hardware and software resources"))
+        list.add(QuestionModel("Which storage device provides the fastest data access times?", "Hard Disk Drive (HDD)","Solid State Drive (SSD)", "Blu-ray Disc", "DVD-ROM","Solid State Drive (SSD)"))
+        list.add(QuestionModel("Which networking protocol is commonly used to transfer files over the Internet", "HTTP","FTP", "SMTP", "POP3","FTP"))
+        list.add(QuestionModel("What is the binary equivalent of the decimal number 25?", "10010","11001", "10101", "11100","10010"))
 
         binding.question.setText(list.get(0).question)
         binding.Option1.setText(list.get(0).Option1)
@@ -58,7 +59,7 @@ class GKquizActivity : AppCompatActivity() {
         count++
         if (count>=list.size){
             val intent = Intent(this, ScoreActivity::class.java)
-            intent.putExtra("SCORE1", score)
+            intent.putExtra("SCORE2", score)
             startActivity(intent)
             finish()
         }

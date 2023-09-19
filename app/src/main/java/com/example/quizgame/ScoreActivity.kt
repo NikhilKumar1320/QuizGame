@@ -12,6 +12,16 @@ class ScoreActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityScoreBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.score.setText("Congrats!!! Your Score is ${intent.getIntExtra("SCORE",0)}")
+        val score: Int
+        if (intent.hasExtra("SCORE1")) {
+            score = intent.getIntExtra("SCORE1", 0)
+        } else if (intent.hasExtra("SCORE2")) {
+            score = intent.getIntExtra("SCORE2", 0)
+        } else {
+            score = 0
+        }
+
+        // Display the score
+        binding.score.text = "Congrats!!! Your Score is $score"
     }
 }

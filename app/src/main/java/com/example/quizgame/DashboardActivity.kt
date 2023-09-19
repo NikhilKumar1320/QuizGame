@@ -40,5 +40,11 @@ class DashboardActivity : AppCompatActivity() {
             val intent = Intent(this, GKquizActivity::class.java)
             startActivity(intent)
         }
+
+        val computer1 = findViewById<LinearLayout>(R.id.computer)
+        computer1.setOnClickListener{
+            val intent = Intent(this, ComputerActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
