@@ -52,5 +52,11 @@ class DashboardActivity : AppCompatActivity() {
             val intent = Intent(this, ScienceActivity::class.java)
             startActivity(intent)
         }
+
+        val maths1 = findViewById<LinearLayout>(R.id.maths)
+        maths1.setOnClickListener{
+            val intent = Intent(this, MathsActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

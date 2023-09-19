@@ -15,6 +15,9 @@
         android:theme="@style/Theme.QuizGame"
         tools:targetApi="31">
         <activity
+            android:name=".MathsActivity"
+            android:exported="false" />
+        <activity
             android:name=".ScienceActivity"
             android:exported="false" />
         <activity

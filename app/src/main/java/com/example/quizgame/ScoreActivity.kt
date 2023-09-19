@@ -22,6 +22,9 @@ class ScoreActivity : AppCompatActivity() {
         else if (intent.hasExtra("SCORE3")) {
             score = intent.getIntExtra("SCORE3", 0)
         }
+        else if (intent.hasExtra("SCORE4")) {
+            score = intent.getIntExtra("SCORE4", 0)
+        }
         else {
             score = 0
         }
