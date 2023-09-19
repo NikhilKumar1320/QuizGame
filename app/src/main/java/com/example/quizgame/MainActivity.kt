@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
@@ -60,6 +61,12 @@ class MainActivity : AppCompatActivity() {
                         }
                     }
             }
+        }
+
+        val forget = findViewById<TextView>(R.id.forget)
+        forget.setOnClickListener{
+            val intent = Intent(this, ForgetPasswordActivity::class.java)
+            startActivity(intent)
         }
     }
 }
