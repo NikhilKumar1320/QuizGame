@@ -46,5 +46,11 @@ class DashboardActivity : AppCompatActivity() {
             val intent = Intent(this, ComputerActivity::class.java)
             startActivity(intent)
         }
+
+        val science1 = findViewById<LinearLayout>(R.id.science)
+        science1.setOnClickListener{
+            val intent = Intent(this, ScienceActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

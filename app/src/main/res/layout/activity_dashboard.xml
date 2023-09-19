@@ -252,6 +252,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/science"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="20dp"
@@ -300,7 +301,7 @@
                             android:id="@+id/name5"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/_2"
+                            android:text="@string/_6"
                             android:layout_marginStart="16dp"
                             android:textStyle="bold"
                             android:textSize="22sp"

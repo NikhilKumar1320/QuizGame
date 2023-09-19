@@ -4,29 +4,29 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.quizgame.databinding.ActivityComputerBinding
-import com.example.quizgame.databinding.ActivityGkquizBinding
+import com.example.quizgame.databinding.ActivityScienceBinding
 
-class ComputerActivity : AppCompatActivity() {
+class ScienceActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityComputerBinding
+    private lateinit var binding: ActivityScienceBinding
     private lateinit var list: ArrayList<QuestionModel>
     private var count: Int = 0
     private var score = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityComputerBinding.inflate(layoutInflater)
+        binding = ActivityScienceBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         // Initialize the list
         list = ArrayList<QuestionModel>()
 
-        list.add(QuestionModel("What does CPU stand for?", "Central Processing Unit","Computer Programming Unit", "Central Program Utility", "Computer Power Unit","Central Processing Unit"))
-        list.add(QuestionModel("Which programming language is commonly used for web development?", "Java","Python", "HTML", "C++","HTML"))
-        list.add(QuestionModel("What is the purpose of an operating system?", "To play games","To manage hardware and software resources", "To create documents and spreadsheets", "To browse the internet","To manage hardware and software resources"))
-        list.add(QuestionModel("Which storage device provides the fastest data access times?", "Hard Disk Drive (HDD)","Solid State Drive (SSD)", "Blu-ray Disc", "DVD-ROM","Solid State Drive (SSD)"))
-        list.add(QuestionModel("Which networking protocol is commonly used to transfer files over the Internet?", "HTTP","FTP", "SMTP", "POP3","FTP"))
-        list.add(QuestionModel("What is the binary equivalent of the decimal number 25?", "10010","11001", "10101", "11100","10010"))
+        list.add(QuestionModel("What is the chemical symbol for the element oxygen?", "O2","Ox", "Oc", "O","O"))
+        list.add(QuestionModel("Which planet is known for its beautiful ring system?", "Venus","Earth", "Saturn", "Jupiter","Saturn"))
+        list.add(QuestionModel("What is the process by which plants make their own food using sunlight?", "Respiration","Photosynthesis", "Transpiration", "Germination","Photosynthesis"))
+        list.add(QuestionModel("What is the smallest unit of matter that retains the properties of an element?", "Cell","Atom", "Molecule", "Proton","Atom"))
+        list.add(QuestionModel("Which gas makes up the majority of Earth's atmosphere?", "Oxygen","Carbon dioxide", "Nitrogen", "Hydrogen","Nitrogen"))
+        list.add(QuestionModel("What force of nature keeps objects in motion and causes them to fall towards the Earth's surface?", "Magnetic force","Gravitational force", "Electromagnetic force", "Nuclear force","Gravitational force"))
 
         binding.question.setText(list.get(0).question)
         binding.Option1.setText(list.get(0).Option1)
@@ -59,7 +59,7 @@ class ComputerActivity : AppCompatActivity() {
         count++
         if (count>=list.size){
             val intent = Intent(this, ScoreActivity::class.java)
-            intent.putExtra("SCORE2", score)
+            intent.putExtra("SCORE3", score)
             startActivity(intent)
             finish()
         }

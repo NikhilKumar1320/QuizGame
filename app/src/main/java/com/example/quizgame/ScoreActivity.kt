@@ -15,9 +15,14 @@ class ScoreActivity : AppCompatActivity() {
         val score: Int
         if (intent.hasExtra("SCORE1")) {
             score = intent.getIntExtra("SCORE1", 0)
-        } else if (intent.hasExtra("SCORE2")) {
+        }
+        else if (intent.hasExtra("SCORE2")) {
             score = intent.getIntExtra("SCORE2", 0)
-        } else {
+        }
+        else if (intent.hasExtra("SCORE3")) {
+            score = intent.getIntExtra("SCORE3", 0)
+        }
+        else {
             score = 0
         }
 
